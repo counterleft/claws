@@ -1,6 +1,7 @@
 # Claws
 
-TODO: Write a gem description
+A thread pool library extracted from
+[puma](https://github.com/puma/puma).
 
 ## Installation
 
