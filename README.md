@@ -3,6 +3,8 @@
 A thread pool library extracted from
 [puma](https://github.com/puma/puma).
 
+This gem is *alpha*. It is not ready for public consumption yet.
+
 ## Installation
 
 Add this line to your application's Gemfile:
