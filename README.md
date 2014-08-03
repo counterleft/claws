@@ -24,6 +24,8 @@ Or install it yourself as:
 
 ## Usage
 
+### Full Example
+
 ```ruby
 # the minimum number of threads that should be in the pool at a given time
 min = 1
@@ -46,7 +48,7 @@ pool << 1
 
 pool.spawned # => 1
 
-# Tell all threads in the ppol to exit (pool waits for them to finish)
+# Tell all threads in the pool to exit (pool waits for them to finish)
 pool.shutdown # => []
 
 pool.spawned # => 0
