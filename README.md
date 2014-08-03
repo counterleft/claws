@@ -42,11 +42,14 @@ end
 pool << "foo"
 pool << 1
 
-# f => [1, "foo"]
-# pool.spawned => 1
+# contents => [1, "foo"]
+
+pool.spawned # => 1
 
 # Tell all threads in the ppol to exit (pool waits for them to finish)
-pool.shutdown
+pool.shutdown # => []
+
+pool.spawned # => 0
 ```
 
 ## Contributing
