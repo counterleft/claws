@@ -24,7 +24,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# the minimum number of threads that should be in the pool at a given time
+min = 1
+
+# the maximum number of threads that should be in the pool at a given time
+max = 2
+
+contents = []
+
+# work is what will be performed by each thread
+pool = Claws::ThreadPool.new(min, max) do |work|
+  contents << work
+end
+
+# add "work" to the pool
+pool << "foo"
+pool << 1
+
+# f => [1, "foo"]
+# pool.spawned => 1
+
+# Tell all threads in the ppol to exit (pool waits for them to finish)
+pool.shutdown
+```
 
 ## Contributing
 
