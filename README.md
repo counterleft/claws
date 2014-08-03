@@ -1,6 +1,7 @@
 # Claws
 
 [![Build Status](https://travis-ci.org/winterchord/claws.svg?branch=master)](https://travis-ci.org/winterchord/claws)
+[![Code Climate](https://codeclimate.com/github/winterchord/claws/badges/gpa.svg)](https://codeclimate.com/github/winterchord/claws)
 
 A thread pool library extracted from
 [puma](https://github.com/puma/puma).
